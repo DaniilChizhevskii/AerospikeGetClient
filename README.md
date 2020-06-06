@@ -26,3 +26,22 @@ for (auto const &iterator : client.result) {
     }, iterator.second);
 }
 ```
+### Using connection pooling (async, up to 256 connections, with error handling)
+```cpp
+#include "AerospikePool.h"
+#include <iostream>
+#include <variant>
+#include <map>
+
+...
+
+AerospikePool pool("127.0.0.1", 3000, 10);
+std::map<std::string, std::variant<std::string, long long, double>> result;
+result = pool.get("namespace", "key");
+for (auto const &iterator : client.result) {
+    std::cout << iterator.first << ": \"";
+    std::visit([](const auto &elem) {
+      std::cout << elem << "\"." << std::endl;
+    }, iterator.second);
+}
+```
