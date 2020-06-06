@@ -13,12 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Install Aptitude
-      run: sudo apt-get install aptitude
-    - name: Serach Boost
-      run: sudo aptitude search boost
     - name: Install Boost library
-      run: sudo apt-get install libboost-dev
+      run: sudo apt-get install libboost-dev libboost-chrono-dev libboost-thread-dev
     - name: Install OpenSSL library
       run: sudo apt-get install openssl
     - name: Make project
