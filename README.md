@@ -1,6 +1,8 @@
 # Aerospike Get Client
 A simple [**Aerospike**](https://www.aerospike.com) client that allows you to receive binary data by namespace and key
 
+![Build](https://img.shields.io/github/workflow/status/DaniilChizhevskii/AerospikeGetClient/Build) ![Top Language](https://img.shields.io/github/languages/top/DaniilChizhevskii/AerospikeGetClient) ![License](https://img.shields.io/github/license/DaniilChizhevskii/AerospikeGetClient) ![Repo size](https://img.shields.io/github/repo-size/DaniilChizhevskii/AerospikeGetClient)
+
 # Used libraries
 I tried to use standard libraries - **std** and **Boost**. However, when sending a request to the server, the key is encrypted with *RIPEMD-160*, so I connected the **OpenSSL** library.
 
