@@ -1,0 +1,20 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Install Boost library
+      run: sudo apt-get install libboost-dev
+    - name: Install OpenSSL library
+      run: sudo apt-get install openssl
+    - name: Mke project
+      run: make
