@@ -49,8 +49,7 @@ for (auto const &iterator : client.result) {
 ```cpp
 #include "AerospikePool.h"
 #include <iostream>
-#include <variant>
-#include <map>
+#include <vector>
 
 ...
 
