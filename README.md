@@ -6,3 +6,23 @@ I tried to use standard libraries - **std** and **Boost**. However, when sending
 
 # Possibilities
 This project can be used to connect to an existing **Aerospike** server for subsequent receipt of binary data from it (strings, as well as integer and fractional numbers). You can also use connection pooling to maximize performance.
+
+# Usage
+### Simple Usage (one connection)
+```cpp
+#include "AerospikeClient.h"
+#include <iostream>
+#include <variant>
+#include <map>
+
+...
+
+AerospikeClient client("127.0.0.1", 3000);
+client.get("namespace", "key");
+for (auto const &iterator : client.result) {
+    std::cout << iterator.first << ": \"";
+    std::visit([](const auto &elem) {
+      std::cout << elem << "\"." << std::endl;
+    }, iterator.second);
+}
+```
