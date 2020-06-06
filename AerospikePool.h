@@ -1,3 +1,6 @@
+// Author: Daniil Chizhevskij <daniilchizhevskij@gmail.com>
+// License: MIT
+
 #include "AerospikeClient.h"
 #include <boost/thread.hpp>
 #include <boost/chrono.hpp>
