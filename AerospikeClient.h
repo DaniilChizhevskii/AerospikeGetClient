@@ -1,3 +1,6 @@
+// Author: Daniil Chizhevskij <daniilchizhevskij@gmail.com>
+// License: MIT
+
 #include <openssl/ripemd.h>
 #include <boost/asio.hpp>
 #include <variant>
