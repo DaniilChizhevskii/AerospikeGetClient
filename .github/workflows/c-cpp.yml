@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install Boost library
-      run: sudo apt-get install libboost-dev
+      run: sudo apt-get install libboost1.70-dev
     - name: Install OpenSSL library
       run: sudo apt-get install openssl
     - name: Make project
