@@ -7,7 +7,7 @@ I tried to use standard libraries - **std** and **Boost**. However, when sending
 # Possibilities
 This project can be used to connect to an existing **Aerospike** server for subsequent receipt of binary data from it (strings, as well as integer and fractional numbers). You can also use connection pooling to maximize performance.
 
-# Advantage
+# Advantages
 1. Speed of work.
 2. Connections pooling.
 
