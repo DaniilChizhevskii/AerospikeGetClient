@@ -1,8 +1,9 @@
+// Author: Daniil Chizhevskij <daniilchizhevskij@gmail.com>
+// License: MIT
+
 #include "AerospikeClient.h"
 #include <iostream>
 #include <variant>
-#include <iomanip>
-#include <vector>
 #include <map>
 
 int main() {
