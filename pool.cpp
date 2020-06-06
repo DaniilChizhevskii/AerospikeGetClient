@@ -1,7 +1,9 @@
+// Author: Daniil Chizhevskij <daniilchizhevskij@gmail.com>
+// License: MIT
+
 #include "AerospikePool.h"
 #include <iostream>
 #include <variant>
-#include <iomanip>
 #include <vector>
 #include <map>
 
