@@ -7,6 +7,13 @@ I tried to use standard libraries - **std** and **Boost**. However, when sending
 # Possibilities
 This project can be used to connect to an existing **Aerospike** server for subsequent receipt of binary data from it (strings, as well as integer and fractional numbers). You can also use connection pooling to maximize performance.
 
+# Building
+1. Install [**Boost**](https://github.com/boostorg/boost) (tested on version >= 1.50)
+2. Install [**OpenSSL**](https://github.com/openssl/openssl) (tested on version >= 1.1)
+3. Clone project: `git clone https://github.com/DaniilChizhevskii/AerospikeGetClient`
+4. Set your folder to project folder: `cd AerospikeGetClient`
+5. Make examples: `make`
+
 # Usage
 ### Simple Usage (one connection)
 ```cpp
