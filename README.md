@@ -7,6 +7,10 @@ I tried to use standard libraries - **std** and **Boost**. However, when sending
 # Possibilities
 This project can be used to connect to an existing **Aerospike** server for subsequent receipt of binary data from it (strings, as well as integer and fractional numbers). You can also use connection pooling to maximize performance.
 
+# Advantage
+1. Speed of work.
+2. Connections pooling.
+
 # Building
 1. Install [**Boost**](https://github.com/boostorg/boost) (tested on version ≥ 1.50)
 2. Install [**OpenSSL**](https://github.com/openssl/openssl) (tested on version ≥ 1.1)
