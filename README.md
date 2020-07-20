@@ -51,7 +51,7 @@ for (auto const &iterator : client.result) {
 AerospikePool pool("127.0.0.1", 3000, 10); // Host & Port & Number of connections in pool
 std::map<std::string, std::variant<std::string, long long, double>> result;
 result = pool.get("namespace", "key", 20); // Namespace & Key & Timeout in milliseconds
-for (auto const &iterator : client.result) {
+for (auto const &iterator : result) {
     std::cout << iterator.first << ": \"";
     std::visit([](const auto &elem) {
       std::cout << elem << "\"." << std::endl;
